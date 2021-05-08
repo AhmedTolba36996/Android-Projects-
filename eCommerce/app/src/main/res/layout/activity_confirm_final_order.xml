@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.ConfirmFinalOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtConfirmFinalOrder"
+                android:text="Please Write your shippment details"
+                android:textSize="18dp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_margin="50dp"
+                >
+            </TextView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/nameConfirmFinalOrder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint=" Number Phone ..."
+                android:background="@drawable/input_design"
+                android:id="@+id/numbperPhoneConfirmFinalOrder"
+
+                >
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/numbperPhoneConfirmFinalOrder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint=" Your Home Address ..."
+                android:background="@drawable/input_design"
+                android:id="@+id/adressHomeConfirmFinalOrder"
+
+                >
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/adressHomeConfirmFinalOrder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint=" Your City Address ..."
+                android:background="@drawable/input_design"
+                android:id="@+id/addressCityConfirmFinalOrder"
+
+                >
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txtConfirmFinalOrder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint=" Your name ..."
+                android:background="@drawable/input_design"
+                android:id="@+id/nameConfirmFinalOrder"
+
+                >
+            </EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:layout_margin="20dp"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/confirm_final_order_btn"
+
+                android:layout_alignParentBottom="true"
+                >
+
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

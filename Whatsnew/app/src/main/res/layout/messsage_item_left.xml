@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295dp"
+    android:layout_height="wrap_content"
+    android:padding="9dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_image"
+        android:src="@drawable/profile_image"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_show_message"
+        android:text="Message me "
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:textSize="18dp"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:background="@drawable/background_left"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/left_imageview"
+        android:visibility="gone"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_show_message"
+        android:visibility="gone"
+        android:id="@+id/text_seen"
+        >
+    </TextView>
+</RelativeLayout>
